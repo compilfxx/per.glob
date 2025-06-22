@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Love You</title>
+  <link rel="stylesheet" href="./style.css">
+  <!-- Es-Module Shims para importmap -->
+  <script async src="https://ga.jspm.io/npm:es-module-shims@1.6.3/dist/es-module-shims.js" crossorigin="anonymous"></script>
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.154.0/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.154.0/examples/jsm/",
+      "three-mesh-bvh": "https://unpkg.com/three-mesh-bvh@0.6.0/build/index.module.js",
+      "three-bvh-csg": "https://unpkg.com/three-bvh-csg@0.0.7/build/index.module.js"
+    }
+  }
+  </script>
+</head>
+<body>
+  <main>
+    <section>
+      <div>
+        <h1>Para Ti</h1>
+        <canvas id="canvas" data-engine="three.js r154"></canvas>
+        <h2>HERMOSA</h2>
+        <p id="arrow">»</p>
+      </div>
+    </section>
+    <section>
+      <div>
+        <div class="love-blur">
+          Cuanto más tiempo paso contigo,<br>más te quiero,más te admiro,<br>más me pierdo en ti<br>
+          <a href="carta.pdf" download>
+            <button id="downloadBtn">Descargar carta 💌</button>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
